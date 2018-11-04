@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="88px" viewBox="0 0 106 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>vol</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="vol" transform="translate(-11.000000, -20.000000)">
+            <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="128" height="128"></rect>
+            <path d="M69,108 L41.3115578,82.5263158 L11,82.5263158 L11,45.4736842 L41.3115578,45.4736842 L69,20 L69,108 Z M84.6603774,92 L79,87.36 C84.2830453,79.626628 86.9245283,71.5067092 86.9245283,63 C86.9245283,54.4932908 84.2830453,46.373372 79,38.64 L84.6603774,34 C90.8868236,42.8933778 94,52.5599478 94,63 C94,73.4400522 90.8868236,83.1066222 84.6603774,92 Z M103.086957,106 L97,101.342466 C105.30922,90.2807666 109.463768,77.6667375 109.463768,63.5 C109.463768,49.3332625 105.30922,36.7192334 97,25.6575342 L103.086957,21 C112.362365,33.8082832 117,47.9748082 117,63.5 C117,79.0251918 112.362365,93.1917168 103.086957,106 Z" id="ion-volume-medium---Ionicons" fill="#000000"></path>
+        </g>
+    </g>
+</svg>

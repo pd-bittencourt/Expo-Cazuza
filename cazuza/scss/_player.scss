@@ -1,0 +1,280 @@
+/* ====== home ====== */
+.page-player {
+  background-color: var(--cor-texto);
+  background-image: url(../assets/bg-player@2x.png);
+  background-attachment: fixed;
+  background-position: center 20% ;
+  background-repeat: no-repeat;
+  background-size: 80% 70%;
+}
+.lista {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // flex-wrap: wrap;
+  padding-bottom: 5%;
+  padding-left: 20%;
+  padding-right: 5%;
+}
+
+.titulo-playlist {
+  font-family: 'Eames', sans-serif;
+  font-size: calc(.5rem + 4.5vmin);
+  text-transform: uppercase;
+  color: var(--cor-branco);
+  margin: 32px;
+  position: fixed;
+}
+
+.lista {
+  li {
+    list-style: none;
+    &:nth-child(1) {
+      margin-left: 20%;
+    }
+    &:nth-child(2) {
+      margin-left: 0%;
+    }
+    &:nth-child(3) {
+      margin-left: 12%;
+    }
+    &:nth-child(4) {
+      margin-left: 20%;
+    }
+    &:nth-child(5) {
+      margin-left: 10%;
+    }
+    &:nth-child(6) {
+      margin-left: 30%;
+    }
+    button{
+      position: relative;
+      font-size: calc(.5rem + 3.5vmin);
+      color: var(--cor-texto);
+      background: var(--cor-branco);
+      border: none;
+      padding: .1em 1em;
+      margin: calc(.2rem + 1vmin) 0;
+      transition: all .5s ease;
+
+      &:focus {
+        outline: none;
+        border: none;
+      }
+    }
+    .selected {
+      color: var(--cor-branco);
+      background: var(--cor-texto);
+      padding: .1em 1.5em .1em 1em;
+    }
+  }
+}
+// now playing
+.now-playing {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scaleY(1);
+  width: 4px;
+  height: 3px;
+  background: #fff;
+  // animation: nowplaying 3s infinite forwards;
+}
+
+// @keyframes nowplaying {
+//   0% {height: 5px;};
+//   25% {height: 30px;};
+//   50% {height: 10px;};
+//   100% {height: 20px;};
+// }
+
+.now-playing.bar-1 {
+  right: calc(12px + 4px);
+}
+.now-playing.bar-2 {
+  right: calc(12px + 10px);
+}
+.now-playing.bar-3 {
+  right: calc(12px + 16px);
+}
+
+// player
+.player {
+  position: fixed;
+  bottom: 32px; left: 32px; right: 32px;
+  background: var(--cor-branco);
+  border-radius: 4px;
+  padding: 1rem 2rem;
+
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+  line-height: 1.2;
+  margin: .5em 0;
+}
+
+.player.oculto {
+  display: none;
+}
+
+.playlist-name {
+  font-family: 'Knockout-71', sans-serif;
+  font-size: calc(.5rem + 1.5vmin);
+  margin: 0;
+}
+
+.playlist-selected {
+  font-family: 'Knockout-31', sans-serif;
+}
+
+.playlist-track {
+  font-size: calc(.5rem + 2.5vmin);
+  margin: 0;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;  right: 3rem;
+  transform: translateY(-50%);
+  display: flex
+}
+
+.back {
+  background-image: url(../assets/step-forward.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  transform: rotate(180deg);
+  
+}
+.next {
+  background-image: url(../assets/step-forward.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: 10px;
+  width: 48px;
+  height: 48px;
+}
+.play {
+  background-image: url(../assets/play.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+}
+
+.play.pause-icon{
+  background-image: url(../assets/pause.svg);
+}
+
+.vol-icon {
+  background-image: url(../assets/vol.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  margin-right: 20px;
+}
+
+// RANGE CONTROL
+// https://www.cssportal.com/style-input-range/
+// input dotted lines focus firefox bug
+
+
+input[type=range] {
+  height: 48px;
+  -webkit-appearance: none;
+  margin-right: calc(.5rem + 4vmin);
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-moz-focus-outer {
+  border: 0;
+  }
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #000000;
+  border-radius: 3px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #BE0000;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #BE0000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #000000;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #000000;
+  border-radius: 0px;
+  border: 0px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #BE0000;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #BE0000;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #000000;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #000000;
+  border: 0px solid #000000;
+  border-radius: 0px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #BE0000;
+  height: 18px;
+  width: 18px;
+  border-radius: 18px;
+  background: #BE0000;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #000000;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #000000;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Player</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="page-player">
+  <h1 class="titulo-playlist">Escolha uma Playlist</h1>
+  <div class="lista">
+    <ul>
+      <li><button onclick="choosePl(this)" data-id="0" class="playlist">Pro dia nascer feliz</button></li>
+      <li><button onclick="choosePl(this)" data-id="1" class="playlist">Pode seguir a sua estrela</button></li>
+      <li><button onclick="choosePl(this)" data-id="2" class="playlist">Mais uma dose? É claro que eu tô afim.</li>
+      <li><button onclick="choosePl(this)" data-id="3" class="playlist">Faz parte do meu show</button></li>
+      <li><button onclick="choosePl(this)" data-id="4" class="playlist">Até nas coisas mais banais</button></li>
+      <li><button onclick="choosePl(this)" data-id="5" class="playlist">O tempo não para</button></li>
+    </ul>
+  </div>
+  <div class="player oculto">
+    <p class="playlist-name">Playlist <span class="playlist-selected">Escolha uma playlist!</span></p>
+    <h3 class="playlist-track"></h3>
+    <div class="controls">
+      <div class="vol-icon"></div>
+      <input class="volume" type="range" min="0" max="1" step="0.01" value="0.5" onchange="ajustVolume(this.value)" oninput="ajustVolume(this.value)" />
+      <div class="back" onclick="prevTrack()"></div>
+      <div class="play" onclick="playPauseTrack()"></div>
+      <div class="next" onclick="nextTrack()"></div>
+    </div>
+  </div>
+  <script src="./js/anime-master/anime.min.js"></script>
+  <script src="./functions.js"></script>
+</body>
+</html>
