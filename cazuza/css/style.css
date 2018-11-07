@@ -626,6 +626,7 @@ p {
 .playlist-track {
   font-size: calc(.5rem + 2.5vmin);
   margin: 0;
+  text-transform: capitalize;
 }
 
 .controls {

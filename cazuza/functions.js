@@ -4,7 +4,7 @@ const pls = [
     musicas: [ 
       {
         i: 1,
-        title: 'O Nosso Amor A Gente Inventa',
+        title: 'O nosso amor a gente inventa',
         url: './audio/o_nosso_amor_a_gente_inventa.mp3'
       },
       {
@@ -14,17 +14,17 @@ const pls = [
       },
       {
         i: 3,
-        title: 'Bete Balanço',
+        title: 'Bete balanço',
         url: './audio/bete_balanco.mp3'
       },{
         i: 4,
-        title: 'Pro Dia Nascer Feliz',
+        title: 'Pro dia nascer feliz',
         url: './audio/pro_dia_nascer_feliz.mp3'
       }
     ]
   },
   {
-    title: 'Pode seguir a sua estrela',
+    title: 'Pode seguir a tua estrela',
     musicas: [ 
       {
         i: 1,
@@ -38,7 +38,7 @@ const pls = [
       },
       {
         i: 3,
-        title: 'Maior Abandonado',
+        title: 'Maior abandonado',
         url: './audio/maior_abandonado.mp3'
       },
       {
@@ -49,7 +49,7 @@ const pls = [
     ]
   },
   {
-    title: 'Mais uma dose? É claro que eu tô afim.',
+    title: 'Mais uma dose? É claro que eu to a fim.',
     musicas: [ 
       {
         i: 1,
@@ -58,17 +58,18 @@ const pls = [
       },
       {
         i: 2,
-        title: 'Completamente Blue',
+        title: 'Completamente blue',
         url: './audio/completamente_blue.mp3'
       },
       {
         i: 3,
-        title: 'O tempo não para',
-        url: './audio/o_tempo_nao_para.mp3'
+        // Eu queria ter uma bomba
+        title: 'Eu queria ter uma bomba',
+        url: './audio/eu_queria_ter_uma_bomba.mp3'
       },
       {
         i: 4,
-        title: 'Minha Flor, Meu Bebê',
+        title: 'Minha flor, meu bebê',
         url: './audio/minha_flor.mp3'
       },
     ]
@@ -78,13 +79,14 @@ const pls = [
     musicas: [ 
       {
         i: 1,
-        title: 'Boas Novas',
+        title: 'Boas novas',
         url: './audio/boas_novas.mp3'
       },
       {
         i: 2,
-        title: 'Pro dia nascer feliz',
-        url: './audio/pro_dia_nascer_feliz.mp3'
+        // Só se for a dois
+        title: 'Só se for a dois',
+        url: './audio/so_se_for_a_dois.mp3'
       },
       {
         i: 3,
@@ -93,8 +95,9 @@ const pls = [
       },
       {
         i: 4,
-        title: 'Bete Balanço',
-        url: './audio/bete_balanco.mp3'
+        // Luz Negra
+        title: 'Luz negra',
+        url: './audio/luz_negra.mp3'
       }
     ]
   },
@@ -103,12 +106,12 @@ const pls = [
     musicas: [ 
       {
         i: 1,
-        title: 'Esse Cara',
+        title: 'Esse cara',
         url: './audio/esse_cara.mp3'
       },
       {
         i: 2,
-        title: 'Codinome Beija-Flor',
+        title: 'Codinome beija-flor',
         url: './audio/codinome_beija_flor.mp3'
       },
       {
@@ -127,12 +130,12 @@ const pls = [
     musicas: [ 
       {
         i: 1,
-        title: 'Ideologia',
-        url: './audio/ideologia.mp3'
+        title: 'Vida louca vida',
+        url: './audio/vida_louca_vida.mp3'
       },
       {
         i: 2,
-        title: 'O Tempo não para',
+        title: 'O tempo não para',
         url: './audio/o_tempo_nao_para.mp3'
       },
       {
@@ -142,8 +145,9 @@ const pls = [
       },
       {
         i: 4,
-        title: 'Exagerado',
-        url: './audio/exagerado.mp3'
+        // Todo o amor que houver nessa vida
+        title: 'Todo o amor que houver nessa vida',
+        url: './audio/todo_amor_que_houver.mp3'
       }
     ]
   }
